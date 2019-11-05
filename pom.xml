@@ -57,31 +57,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-					<archive>
-						<manifest>
-							<mainClass>com.lixuefeng.de1.D11Application</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
 				<executions>
 					<execution>
-						<id>make-assembly</id>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
+						<configuration>
+					        <mainClass>com.lixuefeng.d1.D1Application</mainClass>
+					    </configuration>
 					</execution>
 				</executions>
 			</plugin>
+			
+			
 		</plugins>
 	</build>
 

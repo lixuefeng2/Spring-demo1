@@ -15,9 +15,8 @@ public class D1Application {
 		String[] beanNames = ctx.getBeanDefinitionNames();
 		Arrays.parallelSort(beanNames);
 		
-		for(String s: beanNames) {
-			System.out.println(s);
-		}
+		System.out.println(beanNames);
+		System.out.println("done");
 	}
 
 }
